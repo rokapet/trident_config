@@ -6,10 +6,11 @@ The printer is entirely self sourced. The config at this point should be conside
 
 ## Components
  - Raspberry Pi 4 with MainSailOS 32bit
- - BTT Octopus v1.1 (F446)
- - BTT TMC2209 v1.3
- - BTT EBB36 v1.2
- - BTT PiTFT50 v2
+ - BigTreeTech electronics
+     - BTT Octopus v1.1 (F446)
+     - BTT TMC2209 v1.3
+     - BTT EBB36 v1.2
+     - BTT PiTFT50 v2
  - LDO frame
  - LDO steppers
      - LDO 42STH48-2504AC Speedy Power for XY
@@ -35,6 +36,7 @@ The printer is entirely self sourced. The config at this point should be conside
  - Octopus powers Raspberry Pi via GPIO
  - Carrying handle
  - Magnetic corner clips for panels
- - Nozzle wipe and purge bucket (planned)
- - Case LEDs (planned)
+ - Nozzle wipe and purge bucket
+ - Case LEDs
+ - VEFACH (or something similar planned...)
  - Nevermore (planned)
