@@ -15,28 +15,29 @@ The printer is entirely self sourced. The config at this point should be conside
  - LDO steppers
      - LDO 42STH48-2504AC Speedy Power for XY
      - LDO Voron Trident Z-Motor kit for Z (3x LDO 42STH40-1684L300, Tr8x4)
-     - LDO 36STH20-1004AHG for StealthBurner (CW2)
+     - LDO 36STH20-1004AHG for StealthBurner (ClockWork2)
  - LDO rails
  - Mean Well RSP-200-24 power supply
  - PIF printed parts
  - Mellow NF-Crazy hotend (not standard for Trident, I know)
+ - Keenovo 600W bed heater
+ - Energetic PEI printing surface
  - GDSTime fans
  - Gates GT2 belts
  - Powge idlers and pulleys
  - Fushi blue F695 bearings
  - PXKA GE5C spherical bearings
- - Keenovo 600W bed heater
- - Energetic PEI
 
 ## Mods
  - CAN bus (via Octopus CAN bridge and EBB36)
  - Umbilical
- - Tap (with PCB v2.4, lovin' it)
+ - Tap with PCB v2.4 (loving it)
  - X and Y endstops relocation
- - Octopus powers Raspberry Pi via GPIO
+ - Raspberry Pi is powered by Octopus via GPIO
  - Carrying handle
  - Magnetic corner clips for panels
  - Nozzle wipe and purge bucket
  - Case LEDs
- - VEFACH (or something similar planned...)
- - Nevermore (planned)
+ - VEFACH or something similar (planned)
+ - Enclosure temperature/VOC sensor (planned)
+ - Nevermore or BentoBox (planned)
