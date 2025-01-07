@@ -18,6 +18,7 @@ The printer is entirely self sourced. ~~The config at this point should be consi
      - LDO 36STH20-1004AHG for StealthBurner (ClockWork2)
  - LDO rails
  - Mean Well RSP-200-24 power supply
+ - Mean Well RS-25-5 power supply
  - PIF printed parts
  - Mellow NF-Crazy hotend (not standard for Trident, I know)
  - Keenovo 600W bed heater
