@@ -41,3 +41,14 @@ The printer is entirely self sourced. ~~The config at this point should be consi
  - Enclosure temperature/VOC sensor (BME680)
  - VEFACH or Nevermore or BentoBox or something similar (planned)
  - Top Hat or Canopy or similar (planned - I don't want to reprint a carrying handle, but the current handle does not seem to be compatible...)
+
+## Custom GCode
+For the recent config changes, it migth be useful to include the slicer start GCode:
+
+`SET_SHEET_PROMPT`
+
+`PRINT_WARMUP BED=[first_layer_bed_temperature] EXTRUDER={first_layer_temperature[initial_extruder]+extruder_temperature_offset[initial_extruder]} CHAMBER=[chamber_temperature] FILAMENT=[filament_type]`
+
+`PRINT_START BED=[first_layer_bed_temperature] EXTRUDER={first_layer_temperature[initial_extruder]+extruder_temperature_offset[initial_extruder]} CHAMBER=[chamber_temperature] FILAMENT=[filament_type]`
+
+The `SET_SHEET_PROMPT` shows a dialog on the start of the print, where the used print surface (i.e.: Textured PEI, Smooth PEI, etc.) can be selected. It has a 10 second timeout, and defaults to Textured PEI if nothing is selected. As `filament_type` is also passed to the following macros, together they allow to set different PA and Z offset (And potentially a lot more, like chamber fan, for example. See `SET_FILAMENT` macro called by `PRINT_WARMUP`.) values for every type of filament and print surface combos automatically. The `PRINT_WARMUP` and the `PRINT_STARTUP` macros are the actual print start macros, divided into 2 different macros, as suggested by garethky, author of the heat soak macro.
